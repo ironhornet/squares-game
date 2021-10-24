@@ -88,7 +88,7 @@ function renderBox() {
    var maxTop = gameSize.height - boxSize
    var maxLeft = gameSize.width -boxSize
    var randomColor = '#' + Math.floor(Math.random()*16777215).toString(16)
-   console.log(randomColor)
+   console.log('randomColor', randomColor)
 
    box.style.height = box.style.width = boxSize + 'px'
    box.style.position ='absolute'
@@ -109,4 +109,4 @@ function getRandom(min, max) {
 function getRandomColor(){
     return '#' + Math.floor(Math.random()*16777215).toString(16) 
 }
-console.log(getRandomColor())
+console.log('getRandomColor',getRandomColor())
